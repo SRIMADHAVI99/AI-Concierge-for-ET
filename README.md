@@ -1,67 +1,76 @@
-#ET AI Concierge
+# 🚀 ET AI Concierge
 
 A comprehensive AI-powered platform that provides personalized financial guidance and helps users explore the Economic Times ecosystem.
 
 ---
 
-## Features
+## 📌 Overview
 
-### Public Features
-
-* Homepage: AI chatbot interface for user interaction
-* Smart Onboarding: Collects user financial profile (income, profession, experience, goals)
-* Personalized Recommendations: Suggests ET products and services
-* Financial Guidance: Provides actionable financial plans
-* Follow-up Chat: Users can ask additional queries
+ET AI Concierge is a conversational AI system that understands a user’s financial profile and delivers personalized recommendations across ET products, tools, and services.
 
 ---
 
-### Core AI Features
+## 💡 Features
 
-* ET Welcome Concierge: Guides users through onboarding
-* Financial Life Navigator: Analyzes financial profile and suggests strategies
-* Cross-Sell Engine: Recommends relevant ET services
-* Services Marketplace: Suggests insurance, wealth, and financial services
+### User Features
+
+* AI Chat Interface for onboarding
+* Multi-step financial profiling
+* Personalized recommendations
+* Financial action plans
+* Follow-up conversational support
 
 ---
 
-## Tech Stack
+### Core AI Capabilities
+
+* ET Welcome Concierge
+* Financial Life Navigator
+* Cross-Sell Recommendation Engine
+* Services Marketplace Suggestions
+
+---
+
+## 🛠️ Tech Stack
 
 **Frontend:**
 
-* HTML, CSS, JavaScript
+* React.js (Vite)
+* JavaScript, CSS
 
 **Backend:**
 
 * Node.js
 * Express.js
 
-**AI Integration:**
+**AI:**
 
 * OpenAI API
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
-hack2/
-├── backend/              # Node.js backend
-│   ├── server.js         # Main server file
-│   ├── routes/           # API routes
-│   └── .env              # Environment variables
+AI-Concierge-for-ET/
+├── backend/
+│   ├── routes/
+│   ├── server.js
+│   ├── package.json
 │
-├── frontend/             # Frontend UI
+├── frontend/
+│   ├── public/
+│   ├── src/
 │   ├── index.html
-│   ├── script.js
-│   └── style.css
+│   ├── package.json
+│   ├── vite.config.js
 │
 └── README.md
 ```
 
 ---
 
-## Setup Instructions
+## ⚙️ Setup Instructions
 
 ### Prerequisites
 
@@ -71,18 +80,16 @@ hack2/
 
 ---
 
-### Installation
-
-#### Clone the repository
+### 1. Clone Repository
 
 ```bash
-git clone <repository-url>
-cd hack2
+git clone <your-repo-link>
+cd AI-Concierge-for-ET
 ```
 
 ---
 
-### Backend Setup
+## 🔧 Backend Setup
 
 ```bash
 cd backend
@@ -96,65 +103,76 @@ OPENAI_API_KEY=your_api_key_here
 PORT=3001
 ```
 
-Run server:
+Run backend:
 
 ```bash
 node server.js
 ```
 
----
+OR:
 
-### Frontend Setup
-
-* Open project in VS Code
-* Right-click `index.html`
-* Click **Open with Live Server**
+```bash
+npx nodemon server.js
+```
 
 ---
 
-## API Endpoints
+## 🌐 Frontend Setup (React + Vite)
 
-### Public Endpoint
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-* POST /api/concierge → Get personalized financial recommendations
+Open in browser:
+
+```
+http://localhost:5173
+```
 
 ---
 
-## How It Works
+## 🔗 API Endpoint
+
+* POST `/api/concierge` → Generates personalized recommendations
+
+---
+
+## 🧪 How It Works
 
 1. User enters:
 
    * Income
    * Profession
-   * Investment Experience
+   * Experience
    * Financial Goal
 
 2. Backend:
 
    * Processes input
-   * Sends data to OpenAI API
+   * Sends structured data to OpenAI
 
 3. AI:
 
    * Generates personalized recommendations
-   * Suggests ET products and financial strategies
 
 4. Frontend:
 
-   * Displays structured output
+   * Displays structured financial plan
    * Allows follow-up interaction
 
 ---
 
-## Future Enhancements
+## 🚧 Future Enhancements
 
-* Voice-based AI concierge
-* Real-time financial tracking
+* Voice-based AI assistant
+* Real-time portfolio tracking
 * Advanced recommendation engine
 * Multi-language support
 
 ---
 
-## License
+## 👨‍💻 Author
 
-This project is developed for hackathon purposes.
+Hackathon Project – AI-driven financial concierge system
